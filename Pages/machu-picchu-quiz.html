@@ -6,212 +6,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machu Picchu Quiz </title>
     <style>
-        body{
-            margin: 0px;
-            padding: 0px;
-        }
-        h1 {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: center;
-        }
-        .mode-img {
-            height: 30px;
-            width: 30px;
-        }
-    
-        .mode-btnholder {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            right: 20px;
-            top: 70px;
-            position: fixed;
-        }
-        nav{
-            text-align: center;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-    
-        .darkbg {
-            background-color: #10353e;
-            color: beige;
-        }
-    
-        .lightbg {
-            background-color: #d3f1f1;
-            color: black;
-        }
-    
-        .modebtn {
-            border: none;
-            border-radius: 10px;
-            padding: 5px 8px;
-            cursor: pointer;
-        }
-        .submit-btn{
-            background-color: #0f5858;
-            color: #fff;
-            padding: 15px;
-            display: block;
-            margin: 20px auto;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 15px;
-        }
-        .submit-btn:hover{
-            color:#0f5858;
-            background-color:#fff ;
-            border: #0f5858 solid;
-        }
-        .question{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .quiz-container{
-            width: 50%;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            box-shadow : 10px 10px 10px 10px #cbe4ea;
-        }
-        header {
-        background-color: #007a86;
-        color: #fff;
-        padding: 0 15px; /* Adjust padding as needed */
-        width: 100%;
-        display: flex;
-        align-items: center;
-        
-        }
-        .logo-img {
-        height:150px; /* Matches the header height */
-        width: auto;
+       body{
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.mode-img {
+    height: 30px;
+    width: 30px;
 }
 
-        .logo-text {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 30px;
-            margin-top: 5px;
-        }
+.mode-btnholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    right: 30px;
+    top: 180px;
+    position: fixed;
+}
+nav{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-        .social-icon{
-            height: 50px;
-            width: 50px;
-        }
+.darkbg {
+    background-color: #10353e;
+    color: beige;
+}
 
-        .social-media{
-            font-size: 25px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            align-items: center;
-        }
-        .footer-container {
-        display: flex;
-        flex-direction: row;
-        }
+.lightbg {
+    background-color: #d3f1f1;
+    color: black;
+}
 
-        .contact {
-        margin-top: 40px;
-        padding-left: 260px;
-        padding-top: 10px;
-        font-size: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.modebtn {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 8px ;
+    cursor: pointer;
+}
+.submit-btn{
+    background-color: #0f5858;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.submit-btn:hover{
+    color:#0f5858;
+    background-color:#fff ;
+    border: #0f5858 solid;
+}
+.question{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.quiz-container{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* box-shadow : 10px 10px 10px 10px #cbe4ea; */
+}
+header {
+background-color: #007a86;
+color: #fff;
+padding: 0 15px; 
+width: 100%;
+display: flex;
+align-items: center;
 
-        }
+}
+.logo-img {
+height:150px; 
+width: auto;
+}
 
-        .pages {
-        font-size: 18px;
-        margin-top: 5px;
-        padding-right: 270px;
-        padding-top: 10px;
-        text-align: left;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+.logo-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-top: 5px;
+}
 
-        a {
-        text-decoration: none;
-        color: #fff;
-        }
+.social-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.social-media{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+}
+.footer-container {
+display: flex;
+flex-direction: row;
+}
+
+.contact {
+margin-top: 40px;
+padding-left: 260px;
+padding-top: 10px;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.pages {
+font-size: 18px;
+margin-top: 5px;
+padding-right: 270px;
+padding-top: 10px;
+text-align: left;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+}
 
 
-        .social-icon {
-        height: 50px;
-        width: 50px;
-        }
+.social-icon {
+height: 50px;
+width: 50px;
+}
 
-        .social-media {
-        margin-top: 70px;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        align-items: center;
-        }
+.social-media {
+margin-top: 70px;
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+align-items: center;
+}
 
-        nav {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 15px;
-        }
+nav {
+text-align: center;
+margin: 0 auto;
+padding: 0 15px;
+}
 
-        footer {
-        background-color: #007a86;
-        color: #fff;
-        align-items: center;
-        text-align: center;
-        padding: 6px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 6px auto;
-        justify-content: space-around;
-        }
+footer {
+background-color: #007a86;
+color: #fff;
+align-items: center;
+text-align: center;
+padding: 6px 0;
+width: 100%;
+display: flex;
+flex-direction: column;
+margin: 6px auto;
+justify-content: space-around;
+}
 
-        .foot-text {
-        text-align: center;
-        font-size: 20px;
-        }
+.foot-text {
+text-align: center;
+font-size: 20px;
+}
 
-        .social-text {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        }
-        .results{
-            text-align: center;
-        }
-        .buttons-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .home-img{
-            cursor: pointer;
-            position: fixed;
-            left: 10px;
-            top: 200px;
-            border: none;
-            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
-            border-radius: 40%;
-            background-color: #fff;
-        }
+.social-text {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+}
+.results{
+    text-align: center;
+}
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.home-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 200px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
 
-        .home-icon{
-            height: 40px;
-            padding:5px 5px 1px;
-        }
-        .back-icon{
-            position: fixed;
-            bottom: 50px;
-            height: 40px;
-            width: 40px;
-            border: none;
-            left: 10px;
-            border-radius: 40%;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+.home-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+.back-icon{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 30px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+    height: 40px;
+    padding:5px 5px 5px 5px;
 
-        }
+}
+.buttons-container {
+display: flex;
+align-items: center;
+gap: 20px;
+}
 
+.home-icon{
+height: 40px;
+padding:5px 5px 1px;
+}
+
+.feed-img{
+cursor: pointer;
+position: fixed;
+left: 10px;
+bottom:190px;
+border: none;
+box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+border-radius: 40%;
+background-color: #fff;
+}
+.feed-icon{
+height: 40px;
+padding:5px 5px 1px;
+}
 
 </style>
 </head>
@@ -230,8 +255,9 @@
     </header><br>
     <h1>Machu Picchu Quiz </h1>
     <div class="mode-btnholder">
-        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
-        <button onclick="lightmode()" class="modebtn"><img src="../Images/light.png" class="mode-img" ></button>
+        <button onclick="lightmode()" class="modebtn"><img src="../Images/sun.png" class="mode-img" ></button>
+        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark copy.png" class="mode-img"></button>
+
     </div>
     <div class="quiz-container lightbg" id="body">
         <form id="mexico-quizForm">
@@ -363,6 +389,13 @@
             <img src="../Images/back.png" alt="back-png" class="back-icon" />
             </a>
         </div>
+       <div class="feed-img">
+                <a href="../Pages/feedback.html">
+                    <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+                </a>
+            </div>
+        </div>
+    
    
     <script>
         function checkAnswers() {
