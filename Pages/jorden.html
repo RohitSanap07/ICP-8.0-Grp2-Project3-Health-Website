@@ -51,6 +51,7 @@
     <div class="feature-card">
         <div class="cards">
             <img src="../Images/petra2.jpeg" class="card-img">
+        
             <h3>The petra- Famous For</h3>
             <ul>
                 <li> Famous for its rock-cut architecture,  </li>
@@ -67,7 +68,7 @@
             </ul>
         </div>
         <div class="cards">
-            <img src="../Images/taj-card3.jpg" class="card-img">
+            <img src="../Images/petra4.png" class="card-img">
             <h3>The Petra- Constructions</h3>
             <ul>
                 <li>The spectacular sandstone city of Petra was built in the 3rd century BC by the Nabataeans, who carved palaces, temples, tombs, storerooms and stables from the soft stone cliffs.
@@ -80,7 +81,7 @@
         <iframe width="660" height="415" src="https://www.youtube.com/embed/SZ5JjLdzQ1o?si=c6aI-ohTlhYeU1A5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <h1 class="know-about">Test your Knowledge</h1>
-    <button class="btn" onclick="window.location.href='../Pages/petra-jorden-quiz.html'">Take a Quiz</button>
+    <button class="btn" onclick="showAlert(); window.location.href='../Pages/petra-jorden-quiz.html'">Take a Quiz</button>
     <h1 class="know-about">Explore Other Wonders Too...</h>
     <div class="explore-container">
         <div class="wonders">
@@ -149,37 +150,41 @@
             mainBody.classList.remove('bg-dark');
             mainBody.classList.add('bg-light');
         }
+        function showAlert() {
+    alert("You will be redirected to the Petra Jorden quiz page!");
+    window.location.href = '../Pages/petra-jorden-quiz.html';
+    }
 
     </script>
-   <footer>
+  <footer>
     <div class="footer-container">
 
         <div class="pages">
-                <b><u>QUICK LINKS</u></b>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../Pages/india.html">Taj Mahal</a></li>
-                    <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
-                    <li><a href="../Pages/china.html">The Great Wall</a></li>
-                    <li><a href="../Pages/Italy.html">Colosseum</a></li>
-                    <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
-                    <li><a href="../Pages/jorden.html">Petra</a></li>
-                    <li><a href="../Pages/peru.html">Machu pichu</a></li>
-                    <li><a href="../Pages/feedback.html">Feedback</a></li>
-                </ul>
-            </div>
+            <b><u>QUICK LINKS</u></b>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                <li><a href="../Pages/china.html">The Great Wall</a></li>
+                <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                <li><a href="../Pages/jorden.html">Petra</a></li>
+                <li><a href="../Pages/peru.html">Machu pichu</a></li>
+                <li><a href="../Pages/feedback.html">Feedback</a></li>
+            </ul>
+        </div>
       <div>
             <div class="social-media">
                 <p class="social-text"><b><u>FOLLOW US</u></b></p>
 
                 <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
-                  src="./../Images/facebook.png" class="social-icon"></a>
+                  src="./Images/facebook.png" class="social-icon"></a>
 
                 <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
-                       src="./../Images/youtube (1).png" class="social-icon"></a>
+                       src="./Images/youtube (1).png" class="social-icon"></a>
 
                 <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
-                    <img src="./../Images/instagram.png" class="social-icon"></a><br><br>
+                    <img src="./Images/instagram.png" class="social-icon"></a><br><br>
                     <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
 
             </div>
