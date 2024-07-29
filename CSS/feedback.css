@@ -434,7 +434,7 @@ pages {
 }
 
 /* Large Devices  */
-@media screen and (min-width: 993px) and (max-width: 1400px) {
+@media screen and (min-width: 993px) and (max-width: 14000px) {
     .footer-container {
         display: flex;
         flex-direction: row;
